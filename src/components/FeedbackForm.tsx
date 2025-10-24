@@ -13,7 +13,7 @@ export default function FeedbackForm() {
     try {
 
       
-      const res = await fetch(`evolve-backend-nu.vercel.app/api/feedback`, {
+      const res = await fetch(`https://evolve-backend-nu.vercel.app/api/feedback`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
