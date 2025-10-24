@@ -85,8 +85,8 @@ useEffect(() => {
       
       const API_URL = import.meta.env.VITE_API_URL;
       const url = selectedCategory
-        ? `evolve-backend-nu.vercel.app/api/problems/category/${selectedCategory}`
-        : `evolve-backend-nu.vercel.app/api/problems`;
+        ? `https://evolve-backend-nu.vercel.app/api/problems/category/${selectedCategory}`
+        : `https://evolve-backend-nu.vercel.app/api/problems`;
 
       const res = await fetch(url);
       const data = await res.json();
